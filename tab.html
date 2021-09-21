@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Switch</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+    <script> 
+    let x=0;
+  $(document).ready(function()
+  {
+  $(document).mouseleave(function()
+  {
+      if (x==5) {
+          $('#form').submit();
+      }
+    ++x;
+   alert("Warning No. "+x);
+});
+  });
+    </script>
+    
+</head>
+<body>
+<form id="form" action="#"></form>
+</body>
+</html>
